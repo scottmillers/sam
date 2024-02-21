@@ -1,5 +1,5 @@
 {
-  "name": "sam-app",
+  "name": "sam",
   "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
   "mounts": [
     "source=${localEnv:HOME}${localEnv:USERPROFILE},target=/host-home-folder,type=bind,consistency=cached"
@@ -13,6 +13,11 @@
         "streetsidesoftware.code-spell-checker",
         "shd101wyy.markdown-preview-enhanced"
       ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {
+      "version": "latest"
     }
   }
 }
